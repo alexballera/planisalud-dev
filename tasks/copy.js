@@ -15,4 +15,6 @@ gulp.task('copy', () => {
     './src/*.xml',
     './src/.htaccess'
   ]).pipe(gulp.dest('./public'))
+  gulp.src(['./src/screenshot.png'])
+  .pipe(gulp.dest('./public'))
 })

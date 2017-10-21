@@ -12,7 +12,7 @@
     "parser": "babel-eslint",
     "ignore": [
       "/src/js/vendors",
-      "/public"
+      "/public/js/vendors"
     ]
   },
   "babel": {

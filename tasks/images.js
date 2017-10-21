@@ -6,7 +6,7 @@ import imageminSvgo from 'imagemin-svgo'
 import imageminOptipng from 'imagemin-optipng'
 import imageminJpegtran from 'imagemin-jpegtran'
 
-gulp.task('images', ['screenshot', 'login'], () => {
+gulp.task('images', ['screenshot'], () => {
   return gulp.src('./src/images/**')
     .pipe(cache(imagemin({
       optimizationLevel: 7,
@@ -48,25 +48,4 @@ gulp.task('screenshot', () => {
       ]
     })))
     .pipe(gulp.dest('./public'))
-})
-gulp.task('login', () => {
-  gulp.src('./src/login/*.*g')
-    .pipe(cache(imagemin({
-      optimizationLevel: 7,
-      progressive: true,
-      interlaced: true,
-      multipass: true,
-      use: [
-        pngquant(),
-        imageminSvgo(),
-        imageminOptipng({optimizationLevel: 7}),
-        imageminJpegtran({progressive: true})
-      ],
-      svgoPlugins: [
-        { removeViewBox: false }, // don't remove the viewbox atribute from the SVG
-        { removeUselessStrokeAndFill: false }, // don't remove Useless Strokes and Fills
-        { removeEmptyAttrs: false } // don't remove Empty Attributes from the SVG
-      ]
-    })))
-    .pipe(gulp.dest('./public/login'))
 })
