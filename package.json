@@ -15,10 +15,6 @@
       "/public/js/vendors"
     ]
   },
-  "babel": {
-    "presets": "env",
-    "plugins": "transform-regenerator"
-  },
   "dependencies": {
     "babel-eslint": "^8.0.1",
     "jquery": "^3.2.1",
