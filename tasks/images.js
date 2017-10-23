@@ -25,11 +25,10 @@ gulp.task('images', ['screenshot'], () => {
         { removeEmptyAttrs: false } // don't remove Empty Attributes from the SVG
       ]
     })))
-    .pipe(gulp.dest('./build/images'))
     .pipe(gulp.dest('./public/images'))
 })
 gulp.task('screenshot', () => {
-  gulp.src('./src/screenshot.png')
+  gulp.src('./src/*.png')
     .pipe(cache(imagemin({
       optimizationLevel: 7,
       progressive: true,
