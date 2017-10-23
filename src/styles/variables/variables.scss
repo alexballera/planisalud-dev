@@ -1,6 +1,13 @@
 // Colores
 $white: #fff;
 
+// Grid
+$columns: 12;
+$gutter-width: 1%;
+$gutter: 1em;
+$container: 100% - ($gutter-width * 2);
+$container-fluid: 100%;
+
 %placeholder {
   ::-webkit-input-placeholder {
     color: $white;
