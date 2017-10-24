@@ -80,13 +80,13 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
-		<hgroup>
+	<header id="masthead" class="site-header row" role="banner">
+		<hgroup class="col-12">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
-    <div class="logoInfoContainer">
-      <p>
+    <div class="logoInfoContainer col-12">
+      <p class="col-12 col-lg-4">
         Planisalud Medicina Prepagada, C.A. RIF. J-31237788-7. Inscrita en la Superintendencia de la Actividad Aseguradora bajo el Nº 4.
         Publicidad aprobada por la Superintendencia de la Actividad Aseguradora bajo el Nº 15.447
       </p>
@@ -95,19 +95,20 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
       Publicidad aprobada por la Superintendencia de la Actividad Aseguradora bajo el Nº</p>
       */ ?>
     </div>
-    <a href="http://www.planisalud.com"><IMG id="" style="margin-bottom: -50px;     cursor: pointer;" SRC="wp-includes/images/planisalud/planisalud-logo.png"  height="83px" width="340px"></a>
-    <a href="http://www.planisalud.com/?page_id=1387"><IMG id="medicina-prepagada"></a>
-    <div id="x" style="" >
-      <img  style="width: 8px; height: 8px;" src="wp-includes/images/planisalud/equis-azul.png">
-    </div>
-    <div id="chat-superior">
-      <img src="wp-includes/images/planisalud/chat-superior2.png" style="height: 40px; margin-left: 73px;    width: 40px;">
-      <div id="chateaconnosotros" style="left: 106px; color: #2cb4aa; position: relative; font-weight: bold; cursor: pointer; font-size: 18px; margin-left: 16px; top: -23px;">¡Chatea con nosotros!<img style=" left: 3px; top: 11px;" class ="cero"  height="58px" width="193px" alt="" />
+    <a href="http://www.planisalud.com" class="col-12 col-lg-4 logo">
+      <img id="planisalud-logo" src="wp-includes/images/planisalud/planisalud-logo.png">
+    </a>
+    <a href="http://www.planisalud.com/?page_id=1387">
+      <img id="medicina-prepagada">
+    </a>
+    <div id="chat-superior" class="col-12 col-lg-4">
+      <div class="inner-container">
+        <img src="wp-includes/images/planisalud/chat-superior2.png" style="height: 40px; width: 40px;">
+        <div id="chateaconnosotros" style="left: 30px; color: #2cb4aa; position: relative; font-weight: bold; cursor: pointer; font-size: 18px; margin-left: 16px; top: -44px;">¡Chatea con nosotros!<img style=" left: 3px; top: 11px;" class ="cero"  height="58px" width="193px" alt="" />
+        </div>
       </div>
     </div>
-    <div>
-    </div>
-    <div align="right" id="input-header"  >
+    <div align="center" id="input-header" class="col-12 col-lg-4">
       <aside class="widget widget_search" id="search-2">
         <form action="http://www.planisalud.com" class="searchform-2" id="searchform-2" method="get" role="search" autocomplete="on">
           <div>
@@ -117,6 +118,9 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
           </div>
         </form>
       </aside>
+    </div>
+    <div id="x" style="" >
+      <img  style="width: 8px; height: 8px;" src="wp-includes/images/planisalud/equis-azul.png">
     </div>
     <nav id="site-navigation" class="main-navigation" role="navigation">
       <button class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></button>

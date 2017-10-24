@@ -1,0 +1,51 @@
+.site-header {
+
+  .logoInfoContainer {
+    margin: 1rem 0;
+
+    p {
+      font-size: 10px;
+      text-align: justify;
+
+      @include respond-to(lg) {
+        font-size: 8px;
+        padding: 0;
+      }
+    }
+  }
+
+  #planisalud-logo {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #input-header {
+    float: initial;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 13px 0;
+
+    #search-2 {
+      margin-top: 0;
+      position: initial;
+    }
+  }
+
+  #chat-superior {
+    margin-top: 0;
+    padding: 13px 0;
+    position: initial;
+
+    .inner-container {
+      padding: 0 10%;
+
+      @include respond-to(lg) {
+        padding: 0 20%;
+      }
+    }
+
+    img {
+      margin-left: 0;
+    }
+  }
+}
